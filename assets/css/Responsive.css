@@ -1,0 +1,217 @@
+@media (max-width:1200px){
+    .container{
+        padding: 0px 20px;
+    }
+    .hero-content h1.title {
+        font-size:72px;
+    }
+    .hero-content h3 {
+        font-size: 42px;
+    }
+    .footer-image {
+        position: absolute;
+        right: 10%;
+        bottom: 0;
+        width: 300px;
+        box-shadow: 0px 0px 10px #eaeaea;
+    }
+}
+
+/* ----- Media size 991px ------ */
+
+@media (max-width:991px) {
+    .hamburger-menu{
+        display: block;
+    }
+    .menu-wrapper .CV-btn{
+        display: block;
+        flex: none;
+    }
+    .CV-btn.menu-btn{
+        display: none;
+    }
+    .menu-wrapper {
+        position: fixed;
+        height: 100%;
+        width: 240px;
+        top: 0;
+        right: -100%;
+        opacity: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 20px;
+        background-color: #222222;
+        z-index: 9;
+    }
+    .menu-wrapper.active{
+        right: 0%;
+        opacity: 1;
+        transition: all 0.5s;
+    }
+    .menu {
+        flex-direction: column;
+        text-align: end;
+        justify-content: end;
+    }
+    .hero-content h1.title {
+        font-size:62px;
+    }
+    .hero-content h3 {
+        font-size: 32px;
+    }
+    .about-me-inner {
+        flex-direction: column-reverse;
+    }
+    .about-image{
+        margin: 0 auto;
+    }
+    h3.heading {
+        font-size: 52px;
+    }
+    .about-content h6 {
+        font-size: 22px;
+    }
+    .about-content p{
+        font-size:20px;
+        line-height:28px;
+    }
+    .footer-image {
+        display: none;
+    }
+    .about-me{
+        margin: 80px 0px;
+    }
+    /* Portfolio */
+    .project-box {
+        gap: 30px;
+    }
+    .styling-one .left-box{
+        display: none;
+    }
+    .styling-one .right-box .image-container .image-column:first-child{
+        display: block;
+    }
+    .styling-two{
+        flex-direction: column;
+    }
+    .merchand-images .merchand-column{
+        flex: 33.33%;
+        padding: 5px;
+    }
+    .project-box.theme-one {
+        flex-direction: column-reverse;
+        gap: 0px;
+    }
+    .image-container{
+        gap: 10px;
+        padding: 5px 0px;
+    }
+    .project-box.theme-three{
+        flex-direction: column;
+    }
+    .theme-Four .image-column {
+        flex: calc(50% - 10px);
+    }
+
+    .theme-Four .image-container {
+        flex-wrap: wrap;
+    }
+    .experimental {
+        flex-direction: column-reverse !important;
+    }
+    .Three-respo .image-column {
+        flex: 1;
+    }
+    .five-element .left-box{
+        display: none;
+    }
+    
+    .five-element .right-box .image-container .image-column:first-child{
+        display:block;
+    }
+}
+
+
+@media (max-width:771px){
+    .container{
+        padding: 0px 10px;
+    }
+    .logo img {
+        max-width: 140px;
+        margin: 0;
+    }
+    .hero-content{
+        padding: 60px 0px 100px;
+    }
+    .hero-content h1.title {
+        font-size:62px;
+    }
+    .hero-content h3 {
+        font-size: 34px;
+    }
+    .about-me {
+        margin: 40px 0px;
+        padding: 30px 0px;
+    }
+    h3.heading {
+        font-size: 52px;
+    }
+    h4.project-title{
+        font-size: 52px;
+    }
+
+    .project-box p{
+        font-size:20px;
+        line-height:28px;
+        margin-bottom:10px;
+    }
+    .left-box,.right-box{
+        width: 100%;
+    }
+    .project-box.designed-one {
+        flex-direction: column-reverse;
+    }   
+}
+
+@media (max-width:551px){
+    .hero-content h1.title {
+        font-size:52px;
+        line-height: 44px;
+    }
+    .hero-content h3 {
+        font-size: 30px;
+        margin: 10px 0px;
+    }
+    h3.heading {
+        font-size: 42px;
+    }
+    .about-content h6 {
+        font-size: 20px;
+    }
+    .about-content p{
+        font-size:18px;
+        line-height:22px;
+        margin-bottom:10px;
+    }
+    .project-box {
+        gap: 10px;
+        padding: 10px 0px;
+    }
+    .project-box p{
+        font-size:18px;
+        line-height:24px;
+        margin-bottom:10px;
+    }
+    h4.project-title{
+        font-size: 42px;
+        line-height: 50px;
+    }
+    .title {
+        font-size: 32px;
+    }
+    .footer-inner {
+        gap: 10px;
+        flex-direction: column;
+    }
+}
