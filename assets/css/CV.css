@@ -86,3 +86,39 @@ ul.icon-list li {
     top: 10px;
     left: 5px;
 }
+.reference-list {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.reference-box {
+    flex: auto;
+}
+.reference-box h6 {
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.icon {
+    display: flex;
+    gap: 10px;
+    padding: 5px 0px;
+}
+.icon img{
+    margin:0px;
+    flex:none;
+    width: 20px;
+    height: 20px;
+}
+.icon a{
+    white-space: break-spaces;
+}
+.icon a:hover{
+    color: #fff;
+}
+
+@media (max-wdith:551px){
+    .reference-list {
+        display: block;
+    }
+}
