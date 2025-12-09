@@ -109,19 +109,68 @@ li{
     transition: all 0.3s;
 }
 
+/* Breadcrumbs */
+.breadcrumbs{
+    background-color: #272727;
+}
+.breadcrumbs-inner {
+    text-align: center;
+    padding: 30px 0px;
+}
+.breadcrumb-title{
+    font-size:36px;
+    font-weight: 100;
+    font-family: var(--title-font);
+    background-image: url(../images/text-bg.png);
+    background-size: cover;
+    background-position: center;
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-bottom: 20px;
+}
+.breadcrumb-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.breadcrumb-menu li{
+    list-style: none;
+    position: relative;
+}
+.breadcrumb-menu li a:hover,.breadcrumb-menu li a.active{
+    color: var(--title-color);
+}
+
+
 /* Hero Section */
 .hero-section{
     position: relative;
+    overflow: hidden;
 }
-.hero-section:before{
-    content: '';
+.hero-pattern-left {
     position: absolute;
+    top: 29%;
+    left: -4%;
+    z-index: 2;
+}
+.hero-pattern-right {
+    position: absolute;
+    top: 38%;
+    right: -4%;
+    z-index: 2;
+}
+.hero-wrapper{
+    position: relative;
+    z-index: 4;
 }
 .hero-content{
     font-family: var(--title-font);
     color: var(--body-font);
     text-align: center;
     padding: 100px 0px 180px;
+
 }
 .hero-content h1.title {
     font-size:92px;
@@ -141,8 +190,8 @@ li{
 /* ----- About Me ----- */
 .about-me{
     background-image: linear-gradient(to bottom , var(--primary-color) 0%, #1D1D1D 10%, #1D1D1D 90%, var(--primary-color) 100%);
-    margin: 150px 0px 0px;
-    padding: 100px 0px;
+    margin: 50px 0px 0px;
+    padding: 60px 0px;
 }
 .about-me-inner {
     display: flex;
@@ -174,86 +223,39 @@ h3.heading {
     line-height:28px;
     margin-bottom:10px;
 }
-/* ----- Portfolio ----- */
-.project-box {
-    display: flex;
-    flex-wrap: wrap;
-    gap:50px;
-    padding: 10px 0px;
+
+/* ----- Portfolio-Slider ------ */
+
+.project-slider-section{
+    padding: 50px 0px;
 }
-.box-centered{
-    align-items: center;
+.project-slider-wrapper{
+    position: relative;
+    margin: 0px 20px;
 }
-.box-centered.inverse{
-    flex-direction: row-reverse;
+.project-slider-section .heading{
+    text-align: center;
+    margin-bottom: 50px;
 }
-.image-container {
-    display: flex;
-    gap: 30px;
-    padding: 20px 0px;
-}
-h4.project-title {
-    font-family: var(--title-font);
-    font-size: 62px;
-    margin-bottom: 15px;
-    font-weight: 100;
-}
-.title{
-    font-family: var(--title-font);
-    font-size: 42px;
-    margin-bottom: 15px;
-    font-weight: 100;
-    color: var(--title-color);
-    text-transform: capitalize;
-}
-.designed .left-box{
-    flex:1;
-}
-.designed .left-box .image-container .image-column:nth-child(2) img{
-    margin-top: 30px;
-}
-.designed .right-box {
-    flex: 1;
-}
-.styling .left-box{
-    flex:none;
-}
-.styling .right-box {
-    flex: 1;
-}
-.image-column {
-    flex: auto;
-}
-.image-column img {
+.project-slider-section .swiper-slide img{
     width: 100%;
 }
-.project-box p{
-    font-size:22px;
-    line-height:32px;
-    margin-bottom:10px;
-}
-.styling-one .right-box .image-container .image-column:first-child{
-    display: none;
-}
-
-.visual-merchand{
+.explore-btn{
     text-align: center;
-    padding-top: 50px;
-    background-image: linear-gradient(to bottom , var(--primary-color) 0%, #272727 10%, #272727 90%, var(--primary-color) 100%);
 }
-.merchand-images {
-    display: flex;
-    flex-wrap: wrap;
+.explore-btn a{
+    display: inline-flex;
+    background-color: #b0b0b015;
+    border: 1px solid #ffffff39;
+    color: #ffffff;
+    font-size: 22px;
+    margin-top: 50px;
+    padding: 12px 30px;
+    font-weight: 500;
+    border-radius: 30px;
 }
-.merchand-images .merchand-column{
-    flex: 1;
-    padding: 5px;
-}
-.project-box.theme-three,.center-algin {
-    align-items: center;
-}
-.project-box.theme-three .left-box, .project-box.theme-three .right-box {
-    flex: 1;
+.explore-btn a:hover{
+    background-color: #b0b0b05b;
 }
 
 /* Custom Arrows */
@@ -289,38 +291,6 @@ h4.project-title {
 .custom-button-next img, .custom-button-prev img{
   transform: translateY(-4px);
 }
-.project-box.theme-one .left-box {
-    flex: 40%;
-}
-.project-box.theme-one .right-box {
-    flex: 10;
-}
-.portfolio-section-2.themed {
-    padding: 50px 0px;
-    background-image: linear-gradient(to bottom , var(--primary-color) 0%, #272727 10%, #272727 90%, var(--primary-color) 100%);
-}
-.theme-one .image-container .image-column{
-    flex: 1;
-}
-.project-box.theme-two{
-    flex-direction: row-reverse;
-}
-.project-box.theme-two .left-box {
-    flex: 30%;
-}
-.project-box.theme-two .right-box {
-    flex: 60%;
-}
-.project-box.theme-two.inverse {
-    flex-direction: row;
-}
-.five-element .right-box .image-container .image-column:first-child{
-    display:none;
-}
-
-
-
-
 
 
 /* ----- Footer ----- */
@@ -328,7 +298,7 @@ h4.project-title {
 footer {
     padding: 20px 0px;
     background-color: #272727;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 ul.footer-menu {
     display: flex;

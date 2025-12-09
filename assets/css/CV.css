@@ -1,0 +1,37 @@
+.cv-container{
+    max-width: 920px;
+    margin: 0 auto;
+    padding: 0px 10px;
+}
+.cv-section{
+    padding: 30px 0px;
+}
+.accordion-box{
+    margin-bottom: 10px;
+}
+.accordion-head {
+    padding: 20px;
+    background-color: #393939;
+}
+.accordion-head h5{
+    font-size: 20px;
+    font-weight: 100;
+    font-family: var(--title-font);
+    color: var(--title-color);
+}
+.accordion-content{
+    font-size: 18px;
+    background-color: #393939;
+    border-top: 1px solid #6c6c6c00;
+    transform-origin: top;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .6s ease;
+}
+.accordion-box.active .accordion-content{
+    border-top: 1px solid #6c6c6c;
+    max-height: 200px; 
+}
+.accordion-content-inner{
+    padding: 20px;
+}

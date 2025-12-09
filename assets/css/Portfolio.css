@@ -1,0 +1,120 @@
+/* ----- Portfolio ----- */
+.sub-portfolio{
+    padding-top: 60px;
+}
+
+
+
+
+.project-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap:50px;
+    padding: 10px 0px;
+}
+.box-centered{
+    align-items: center;
+}
+.box-centered.inverse{
+    flex-direction: row-reverse;
+}
+.image-container {
+    display: flex;
+    gap: 30px;
+    padding: 20px 0px;
+}
+h4.project-title {
+    font-family: var(--title-font);
+    font-size: 62px;
+    margin-bottom: 15px;
+    font-weight: 100;
+}
+.title{
+    font-family: var(--title-font);
+    font-size: 42px;
+    margin-bottom: 15px;
+    font-weight: 100;
+    color: var(--title-color);
+    text-transform: capitalize;
+}
+.designed .left-box{
+    flex:1;
+}
+.designed .left-box .image-container .image-column:nth-child(2) img{
+    margin-top: 30px;
+}
+.designed .right-box {
+    flex: 1;
+}
+.styling .left-box{
+    flex:none;
+}
+.styling .right-box {
+    flex: 1;
+}
+.image-column {
+    flex: auto;
+}
+.image-column img {
+    width: 100%;
+}
+.project-box p{
+    font-size:22px;
+    line-height:32px;
+    margin-bottom:10px;
+}
+.styling-one .right-box .image-container .image-column:first-child{
+    display: none;
+}
+
+.visual-merchand{
+    text-align: center;
+}
+.merchand-images {
+    display: flex;
+    flex-wrap: wrap;
+}
+.merchand-images .merchand-column{
+    flex: 1;
+    padding: 5px;
+}
+.project-box.theme-three,.center-algin {
+    align-items: center;
+}
+.project-box.theme-three .left-box, .project-box.theme-three .right-box {
+    flex: 1;
+}
+
+
+.project-box.theme-one .left-box {
+    flex: 40%;
+}
+.project-box.theme-one .right-box {
+    flex: 10;
+}
+.portfolio-section-2.themed {
+    padding: 50px 0px;
+    background-image: linear-gradient(to bottom , var(--primary-color) 0%, #272727 10%, #272727 90%, var(--primary-color) 100%);
+}
+.theme-one .image-container .image-column{
+    flex: 1;
+}
+.project-box.theme-two{
+    flex-direction: row-reverse;
+}
+.project-box.theme-two .left-box {
+    flex: 30%;
+}
+.project-box.theme-two .right-box {
+    flex: 60%;
+}
+.project-box.theme-two.inverse {
+    flex-direction: row;
+}
+.five-element .right-box .image-container .image-column:first-child{
+    display:none;
+}
+
+.styling-one .left-box .image-container{
+    padding-top: 0px;
+}

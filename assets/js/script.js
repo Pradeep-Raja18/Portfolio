@@ -15,6 +15,21 @@ document.addEventListener('click', (e) => {
     menu.classList.remove('active');
 });
 
+const projectSwiper = new Swiper(".project-slider", {
+    loop: true,
+    spaceBetween: 20,
+    slidesPerView: 3,
+    navigation: {
+    nextEl: ".custom-button-next",
+    prevEl: ".custom-button-prev",
+    },
+    breakpoints: {
+    320: { slidesPerView: 2, spaceBetween: 10 },
+    576: { slidesPerView: 2 },
+    768: { slidesPerView: 4 },
+    1024: { slidesPerView: 5 }
+    }
+});
 const swiper = new Swiper(".designed-slider", {
     loop: true,
     spaceBetween: 20,
@@ -30,3 +45,20 @@ const swiper = new Swiper(".designed-slider", {
     1024: { slidesPerView: 4 }
     }
 });
+
+const accordions = document.querySelectorAll('.accordion-box');
+
+accordions.forEach((item) => {
+    item.querySelector('.accordion-head').addEventListener('click', () => {
+
+        // close all first
+        accordions.forEach(i => {
+            if(i !== item){
+                i.classList.remove('active');
+            }
+        })
+
+        // toggle clicked one
+        item.classList.toggle('active');
+    })
+})
