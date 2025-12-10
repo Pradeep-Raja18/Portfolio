@@ -49,6 +49,9 @@ li{
     margin: 0;
     padding: 0;
 }
+.text-center{
+    text-align: center;
+}
 .text-gold{
     background-image: url(../images/text-bg.png);
     background-size: cover;
@@ -82,8 +85,8 @@ li{
 .menu{
     display: flex;
     gap: 25px;
-    justify-content: center;
-    font-size: 18px;
+    justify-content: end;
+    font-size: 20px;
 }
 .menu a:hover{
     color: #fff;
@@ -161,15 +164,18 @@ li{
     right: -4%;
     z-index: 2;
 }
-.hero-wrapper{
+.hero-wrapper,.hero-image{
     position: relative;
     z-index: 4;
+}
+.hero-image{
+    margin-bottom: 40px;
 }
 .hero-content{
     font-family: var(--title-font);
     color: var(--body-font);
     text-align: center;
-    padding: 100px 0px 180px;
+    padding: 100px 0px 220px;
 
 }
 .hero-content h1.title {
@@ -185,6 +191,16 @@ li{
     font-size: 54px;
     font-weight: 100;
     margin-bottom: -10px;
+}
+.image-wrapper {
+    display: flex;
+    gap: 20px;
+}
+.image-wrapper img{
+    border-radius: 5px;
+}
+.image-wrapper .image-box:nth-child(even) {
+    margin-top: 60px;
 }
 
 /* ----- About Me ----- */
@@ -308,5 +324,25 @@ ul.footer-menu {
 .footer-inner {
     display: flex;
     align-items: center;
+}
+.footer-icon {
+    flex: 1;
+}
+.footer-icon ul {
+    display: flex;
+    justify-content: end;
+    align-items:center;
+    gap:10px
+}
+.footer-menu li a:hover{
+    color: #fff;
+}
+.footer-icon ul img{
+    width:25px;
+    height:25px;
+    opacity: 0.5;
+}
+.footer-icon ul li:hover img{
+    opacity: 1;
 }
 

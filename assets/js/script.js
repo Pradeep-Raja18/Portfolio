@@ -40,8 +40,8 @@ const swiper = new Swiper(".designed-slider", {
     },
     breakpoints: {
     320: { slidesPerView: 2, spaceBetween: 10 },
-    576: { slidesPerView: 2 },
-    768: { slidesPerView: 3 },
+    576: { slidesPerView: 3 },
+    768: { slidesPerView: 4 },
     1024: { slidesPerView: 4 }
     }
 });
