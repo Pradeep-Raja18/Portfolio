@@ -59,6 +59,10 @@ li{
     -webkit-background-clip: text;
     color: transparent;
 }
+.body-font{
+    font-family: var(--body-font) !important;
+    font-weight: 600;
+}
 
 /* ----- Header Styles ------ */
 .header-inner {

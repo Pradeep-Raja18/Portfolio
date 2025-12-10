@@ -124,14 +124,16 @@ ul.icon-list li {
     min-width: 300px;
 }
 .intro-content h4 {
-    font-size: 42px;
+    font-size: 36px;
     font-family: var(--title-font);
+    color: var(--title-color);
     font-weight: 100;
+    margin-bottom: 10px;
 }
 .intro-content h6 {
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 500;
-    color:#fff;
+    color:#d6d6d6;
     margin-bottom:10px;
 }
 .intro-content p{

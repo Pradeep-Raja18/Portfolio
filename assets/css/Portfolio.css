@@ -131,7 +131,9 @@ h4.project-title {
 }
 .portfolio-catgories {
     display: flex;
-    gap: 60px;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
     cursor: pointer;
 }
 .portfolio-catgories .categories-box:nth-child(2),
@@ -144,4 +146,25 @@ h4.project-title {
     color: var(--title-color);
     text-align: center;
     margin-top: 10px;
+}
+a.categories-box {
+    flex: calc(20% - 30px);
+}
+.designed-image-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0px 20px;
+}
+
+.designed-styled-images {
+    padding: 60px 0px 30px;
+}
+.designstyed-wrapper{
+    padding: 30px 0px;
+}
+.designstyed-wrapper:nth-child(odd) {
+    background-color: #000000;
 }

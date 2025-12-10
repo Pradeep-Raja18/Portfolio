@@ -30,21 +30,7 @@ const projectSwiper = new Swiper(".project-slider", {
     1024: { slidesPerView: 5 }
     }
 });
-const swiper = new Swiper(".designed-slider", {
-    loop: true,
-    spaceBetween: 20,
-    slidesPerView: 4,
-    navigation: {
-    nextEl: ".custom-button-next",
-    prevEl: ".custom-button-prev",
-    },
-    breakpoints: {
-    320: { slidesPerView: 2, spaceBetween: 10 },
-    576: { slidesPerView: 3 },
-    768: { slidesPerView: 4 },
-    1024: { slidesPerView: 4 }
-    }
-});
+
 
 const accordions = document.querySelectorAll('.accordion-box');
 
