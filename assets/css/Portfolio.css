@@ -103,10 +103,10 @@ h4.project-title {
     flex-direction: row-reverse;
 }
 .project-box.theme-two .left-box {
-    flex: 30%;
+    flex: 1;
 }
 .project-box.theme-two .right-box {
-    flex: 60%;
+    flex: 1;
 }
 .project-box.theme-two.inverse {
     flex-direction: row;
