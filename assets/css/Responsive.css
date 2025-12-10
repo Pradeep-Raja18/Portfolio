@@ -15,6 +15,13 @@
         width: 300px;
         box-shadow: 0px 0px 10px #eaeaea;
     }
+    .Flashback .left-box, .Flashback .center-box, .Flashback .right-box {
+        flex: 1;
+    }
+    .Flashback .center-box {
+        order: -1;
+        flex: 100% !important;
+    }
 }
 
 /* ----- Media size 991px ------ */
@@ -139,6 +146,13 @@
     }
     .hero-pattern-left,.hero-pattern-right{
         display: none;
+    }
+    .five-element .image-column {
+        flex: calc(50% - 10px) !important;
+    }
+
+    .five-element .image-container {
+        flex-wrap: wrap;
     }
 }
 

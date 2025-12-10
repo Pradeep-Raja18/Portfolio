@@ -68,7 +68,7 @@ li{
     flex: 1;
 }
 .logo img {
-    max-width: 200px;
+    max-height: 32px;
     margin: 0;
 }
 
@@ -115,7 +115,7 @@ li{
 }
 .breadcrumbs-inner {
     text-align: center;
-    padding: 30px 0px;
+    padding: 20px 0px;
 }
 .breadcrumb-title{
     font-size:36px;
@@ -126,7 +126,7 @@ li{
     background-position: center;
     -webkit-background-clip: text;
     color: transparent;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 .breadcrumb-menu {
     display: flex;

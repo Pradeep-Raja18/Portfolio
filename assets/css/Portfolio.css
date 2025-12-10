@@ -118,3 +118,30 @@ h4.project-title {
 .styling-one .left-box .image-container{
     padding-top: 0px;
 }
+.Flashback .left-box, .Flashback .center-box, .Flashback .right-box {
+    flex: 1;
+}
+.Flashback .center-box{
+    text-align: center;
+}
+
+/* Page */
+.portfolio-page{
+    padding: 60px 0px;
+}
+.portfolio-catgories {
+    display: flex;
+    gap: 60px;
+    cursor: pointer;
+}
+.portfolio-catgories .categories-box:nth-child(2),
+.portfolio-catgories .categories-box:nth-child(4){
+    margin-top: 60px;
+}
+.category-title{
+    font-size: 32px;
+    font-family: var(--title-font);
+    color: var(--title-color);
+    text-align: center;
+    margin-top: 10px;
+}

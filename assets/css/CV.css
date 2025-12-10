@@ -116,9 +116,39 @@ ul.icon-list li {
 .icon a:hover{
     color: #fff;
 }
+.intro-inner {
+    display: flex;
+    gap: 20px;
+}
+.intro-image {
+    min-width: 300px;
+}
+.intro-content h4 {
+    font-size: 42px;
+    font-family: var(--title-font);
+    font-weight: 100;
+}
+.intro-content h6 {
+    font-size: 22px;
+    font-weight: 500;
+    color:#fff;
+    margin-bottom:10px;
+}
+.intro-content p{
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom:10px;
+    line-height:26px;
+}
 
-@media (max-wdith:551px){
+@media (max-width:771px){
     .reference-list {
         display: block;
+    }
+    .intro-inner {
+        flex-direction: column;
+    }
+    .intro-image,.intro-content {
+        min-width: 100%;
     }
 }
