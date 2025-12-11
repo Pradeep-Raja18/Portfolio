@@ -188,6 +188,9 @@
     .hero-content{
         padding: 60px 0px 100px;
     }
+    .hero-content p {
+    font-size: 16px;
+    }
     .hero-content h1.title {
         font-size:62px;
     }
@@ -249,7 +252,8 @@
 @media (max-width:551px){
     .hero-content h1.title {
         font-size:52px;
-        line-height: 44px;
+        line-height: 50px;
+        margin-bottom: 10px;
     }
     .hero-content h3 {
         font-size: 30px;

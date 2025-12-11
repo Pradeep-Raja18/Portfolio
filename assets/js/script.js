@@ -18,7 +18,7 @@ document.addEventListener('click', (e) => {
 const projectSwiper = new Swiper(".project-slider", {
     loop: true,
     spaceBetween: 20,
-    slidesPerView: 3,
+    slidesPerView: 2,
     navigation: {
     nextEl: ".custom-button-next",
     prevEl: ".custom-button-prev",

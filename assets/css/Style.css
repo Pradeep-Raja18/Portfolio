@@ -196,6 +196,12 @@ li{
     font-weight: 100;
     margin-bottom: -10px;
 }
+.hero-content p {
+    font-family: var(--body-font);
+    max-width: 860px;
+    margin: 0 auto;
+    font-size: 20px;
+}
 .image-wrapper {
     display: flex;
     gap: 20px;
