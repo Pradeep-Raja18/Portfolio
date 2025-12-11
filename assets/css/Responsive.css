@@ -330,4 +330,11 @@
     .category-img img{
         width: 100%;
     }
+    .centered-image {
+        gap: 5px;
+        padding: 10px 0px;
+    }
+    .centered-image .img-box:nth-child(2){
+        margin-top:0px;
+    }
 }
